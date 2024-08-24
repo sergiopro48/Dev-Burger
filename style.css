@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body {
+    background-image: url(./Assest/Post\ instagram\ marrom\ hamburgueria.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.container-buttons {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    /* Vai alinhar na horizontal ao centro */
+    align-items: center;
+    /* Vai alinhar na vertical */
+    gap: 20px;
+    /* Cria um distânciamento entre os itens */
+    /*O CONTAINER - BUTTONS CENTRALIZOU OS BUTTONS*/
+}
+
+/*
+NOTA: Só posso usar estes 03 
+=> justify-content: center;
+=> align-items: center;
+=> gap: ; 
+SÓ QUANDO FOR USAR O "DISPLAY FLEX 
+*/
+
+button {
+    background-color: rgb(181, 164, 8);
+    border: none;
+    /* Serve para tirar as bordas*/
+    border-radius: 5px;
+    /* Serve para deixar arredondadinho*/
+    color: #000000;
+    /* Cor do Button*/
+    padding: 10px;
+    /* Deixar o button um pouco maior */
+    cursor: pointer;
+    /*Fica a mãozinha */
+    font-weight: bold;
+    /* Deixa a letra um pouquinho mais grossa */
+    width: 110px;
+    /* Deixou os buttons no mesmo tamanhos */
+    /* AQUI SERVIU PARA ESTILIZAR O BUTTON */
+}
+
+button:hover {
+    opacity: 0.8;
+    /* Quando passar o cursosr no button aí fica com efeito */
+}
+
+
+ul {
+
+    list-style: none;
+    /* Serve para tirar uma bolinha preta a qual ficou na página da internet */
+    display: grid;
+    /* Mostra quantas linhas e colunas que vou querer no meu layolt*/
+    grid-template-columns: 200px 200px 200px;
+    /* Ela define quantas linhas e colunas que eu quero */
+    gap: 20px;
+    /* Cria um distânciamento entre os itens */
+    justify-content: center;
+    /* Vai alinhar na horizontal ao centro */
+}
+
+li {
+    border: 2px solid rgb(181, 164, 8);
+    border-radius: 5px;
+    /*- Serve para deixar as bordas meio rendondinha */
+    padding: 5px;
+    /* Serve para não deixar os itens grudados */
+
+
+
+    /* "li" é a imagem juntos com o "P". Aqui serve para estiliza-los */
+}
+
+img {
+    width: 100%;
+    /* Serve para aumentar ou diminur o tamanho da imagem */
+    border-radius: 5px;
+    /*- Serve para deixar as bordas meio rendondinha */
+
+}
+
+p {
+
+    color: #000000;
+    /* Altera a cor do "P" aqual fica embaixo das imagens */
+
+
+}
+
+.item-price {
+    /*VALOR*/
+    font-weight: bolder;
+    /* Deixa a letra um pouquinho mais grossa */
+    color: #FF0000;
+    /* Estilizou a cor do valor */
+
+}
+
+@media(max-width:600px){
+
+    body{
+height: 100%;
+width: 100%;
+display: block;
+ }
+ .item-price {
+    font-weight: bolder;
+    color: #fbff00;
+    
+}
+}
