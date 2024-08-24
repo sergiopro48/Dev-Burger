@@ -112,16 +112,31 @@ p {
 
 }
 
-@media(max-width:600px){
+@media(max-width:600px) {
+    button:hover {
+        opacity: 0.8;
+        /* Quando passar o cursosr no button aí fica com efeito */
+    }
 
-    body{
-height: 100%;
-width: 100%;
-display: block;
- }
- .item-price {
-    font-weight: bolder;
-    color: #fbff00;
+    body {
+        height: 100vh;
+    }
+
+    .container-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    ul {
+        grid-template-columns: 150px 150px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 200px;
+        
+        
+    }
     
-}
+ 
 }
